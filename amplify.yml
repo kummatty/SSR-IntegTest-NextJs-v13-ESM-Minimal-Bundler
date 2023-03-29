@@ -1,0 +1,19 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm install
+        build:
+          commands:
+            - npm run build --workspace=packages/nextjs-app
+      artifacts:
+        baseDirectory: packages/nextjs-app/.next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+      buildPath: /
+    appRoot: packages/nextjs-app
