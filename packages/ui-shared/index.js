@@ -1,4 +1,4 @@
-const Greeting = () => <div>monorepo-npm workspaces</div>
+const Greeting = () => <div>Welcome to Next.js!</div>
 
 module.exports = {
   Greeting

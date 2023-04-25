@@ -65,4 +65,4 @@ const nextConfig = {
   transpilePackages: ["../date-formatter-lib", "../ui-shared"],
 }
 
-module.exports = nextConfig
+export default nextConfig;
